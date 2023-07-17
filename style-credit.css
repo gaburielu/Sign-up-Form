@@ -1,0 +1,36 @@
+:root {
+  --pri-clr: #f0f2a7;
+  --sec-clr: #bdbf80;
+  --ter-clr: #a6a272;
+  --qua-clr: #bf702a;
+  --qui-clr: #734124;
+}
+
+body {
+  color: var(--pri-clr);
+  background-image: url("./files/Secondary.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: medium;
+  width: 40vw;
+}
+
+a {
+  text-decoration: none;
+  color: var(--sec-clr);
+}
+a:visited {
+  color: var(--ter-clr);
+}
+li {
+  list-style-type: none;
+}
