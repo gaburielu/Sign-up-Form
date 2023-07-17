@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/files/fairytale.png" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Sign-up Form</title>
   </head>
   <body>
@@ -14,9 +14,9 @@
         <div class="hero">
           <h2 class="heroHeader">2030 Fantasy Fair</h2>
           <p class="para">
-            This is not a real online service! But you know you need something
-            like this in your life to help you realize your deepest dreams? Sign
-            up <em>now</em> to get started.
+            This is not a real online service! I just made this randomly because
+            i found this cool wallpaper and I too lazy to think of theme for my
+            form site. Sign up <em>now?</em>
           </p>
         </div>
         <form action="">
@@ -39,16 +39,7 @@
                 type="number"
                 placeholder="Age"
                 min="12"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <label for="user-email"></label>
-              <input
-                id="user-email"
-                name="user-email"
-                type="email"
-                placeholder="Email Address"
+                max="100"
                 required
               />
             </div>
@@ -59,6 +50,17 @@
                 name="user-phone"
                 id="user-phone"
                 placeholder="Telephone Number"
+                required
+              />
+            </div>
+
+            <div class="form-row" id="email">
+              <label for="user-email"></label>
+              <input
+                id="user-email"
+                name="user-email"
+                type="email"
+                placeholder="Email Address"
                 required
               />
             </div>
@@ -81,6 +83,7 @@
                 placeholder="Repeat Password"
                 required
               />
+              <span id="password-message"></span>
             </div>
           </div>
           <fieldset class="language-form-row">
@@ -111,7 +114,7 @@
             <label for="language-type-2" class="radio-label">Klingon</label>
           </fieldset>
           <div class="form-row">
-            <label for="boots-size">Boots Size</label>
+            <label for="boots-size">Boots Size: </label>
             <select id="boots-size" name="boots-size">
               <option value="xs">Extra Small</option>
               <option value="s">Small</option>
@@ -135,10 +138,12 @@
             <button>Submit</button>
           </div>
         </form>
-        <p class="login">
-          Already have an account?
-          <a href=""><span class="loginspan">Login</span></a>
-        </p>
+        <div class="loginDiv">
+          <p class="login">
+            Already have an account?
+            <a href=""><span class="loginspan">Login</span></a>
+          </p>
+        </div>
       </div>
       <div class="footer">
         <p class="acknowledgement">

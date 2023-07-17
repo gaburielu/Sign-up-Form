@@ -6,6 +6,11 @@
   --qui-clr: #734124;
 }
 
+@font-face {
+  font-family: "EBGaramond";
+  src: url("./files/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+
 body {
   color: var(--pri-clr);
   background-image: url("./files/Background.jpg");
@@ -17,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: "EBGaramond";
 }
 
 .body {
@@ -36,7 +42,7 @@ form {
   gap: 2vh;
 }
 
-.formMainInfo{
+.formMainInfo {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -49,13 +55,14 @@ form {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: "EBGaramond";
+  opacity: 0.75;
+  text-align: center;
 }
-
 
 h2 {
   font-size: 2.5rem;
 }
-
 
 .footer {
   min-width: 40vw;
@@ -114,6 +121,7 @@ ol {
 a {
   text-decoration: none;
   color: var(--sec-clr);
+  font-family: "EBGaramond";
 }
 a:visited {
   color: var(--pri-clr);
@@ -124,9 +132,35 @@ li {
 
 button {
   border-radius: 5px;
-  color: var(--qui-clr);
+  font-family: "EBGaramond";
 }
 
+select {
+  font-family: "EBGaramond";
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+  transition: all 0.5s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  background-color: #fff;
+}
+
+input:invalid:hover {
+  filter: drop-shadow(0 0 10px red);
+}
+
+input:hover {
+  filter: drop-shadow(0 0 10px var(--sec-clr));
+}
 
 @media screen and (max-width: 1242px) {
   .body {
@@ -141,7 +175,8 @@ button {
     display: flex;
     align-items: center;
   }
-  .footer, .dropdown{
+  .footer,
+  .dropdown {
     font-size: 0.5rem;
   }
 }
@@ -158,7 +193,8 @@ button {
     display: flex;
     align-items: center;
   }
-  .footer, .dropdown{
+  .footer,
+  .dropdown {
     font-size: 0.5rem;
   }
 }
