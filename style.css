@@ -14,7 +14,7 @@
 body {
   color: var(--pri-clr);
   background-image: url("./files/Background.jpg");
-  width: 100vw;
+  width: 98vw;
   height: 98vh;
   background-size: cover;
   background-position: center;
